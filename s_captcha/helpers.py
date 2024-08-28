@@ -2,7 +2,7 @@ import random
 
 from django.urls import reverse
 
-from captcha.conf import settings
+from s_captcha.conf import settings
 
 
 def math_challenge():

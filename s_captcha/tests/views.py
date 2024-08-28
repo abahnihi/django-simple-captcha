@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.template import engines
 
-from captcha.fields import CaptchaField
+from s_captcha.fields import CaptchaField
 
 
 TEST_TEMPLATE = r"""

@@ -3,7 +3,7 @@ import sys
 from setuptools import find_packages, setup
 from setuptools.command.test import test as test_command
 
-from captcha import get_version as get_captcha_version
+from s_captcha import get_version as get_captcha_version
 
 
 class Tox(test_command):

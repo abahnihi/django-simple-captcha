@@ -15,8 +15,8 @@ from django.urls import reverse
 from django.utils import timezone
 from django.utils.translation import gettext_lazy
 
-from captcha.conf import settings
-from captcha.models import CaptchaStore
+from s_captcha.conf import settings
+from s_captcha.models import CaptchaStore
 
 
 @override_settings(ROOT_URLCONF="captcha.tests.urls")
@@ -337,9 +337,9 @@ class CaptchaCase(TestCase):
         settings.CAPTCHA_TEST_MODE = __current_test_mode_setting
 
     def test_get_version(self):
-        import captcha
+        import s_captcha
 
-        captcha.get_version()
+        s_captcha.get_version()
 
     def test_missing_value(self):
         r = self.client.get(reverse("captcha-test-non-required"))

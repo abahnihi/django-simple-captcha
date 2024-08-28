@@ -6,8 +6,8 @@ from django.urls import NoReverseMatch, reverse
 from django.utils import timezone
 from django.utils.translation import gettext_lazy
 
-from captcha.conf import settings
-from captcha.models import CaptchaStore
+from s_captcha.conf import settings
+from s_captcha.models import CaptchaStore
 
 
 class CaptchaHiddenInput(HiddenInput):

@@ -11,9 +11,9 @@ from ranged_response import RangedFileResponse
 from django.core.exceptions import ImproperlyConfigured
 from django.http import Http404, HttpResponse
 
-from captcha.conf import settings
-from captcha.helpers import captcha_audio_url, captcha_image_url
-from captcha.models import CaptchaStore
+from s_captcha.conf import settings
+from s_captcha.helpers import captcha_audio_url, captcha_image_url
+from s_captcha.models import CaptchaStore
 
 
 # Distance of the drawn text from the top of the captcha image

@@ -8,7 +8,7 @@ from django.db import models
 from django.utils import timezone
 from django.utils.encoding import smart_str
 
-from captcha.conf import settings as captcha_settings
+from s_captcha.conf import settings as captcha_settings
 
 
 # Heavily based on session key generation in Django
